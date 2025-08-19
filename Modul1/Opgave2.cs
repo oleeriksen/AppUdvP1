@@ -4,12 +4,17 @@ public class Opgave2
 {
     public static void Run()
     {
-        string input = Console.ReadLine();
-        int tal = int.Parse(input);
-        while (tal >= 1)
+        while (true)
         {
-            Console.WriteLine(tal);
-            tal--;
+            string input = Console.ReadLine();
+            int tal = int.Parse(input);
+            if (tal == 0)
+                break;
+            while (tal >= 1)
+            {
+                Console.WriteLine(tal);
+                tal--;
+            }
         }
     }
 }
