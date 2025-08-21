@@ -4,11 +4,11 @@ public class Opgave1
 {
     public static void Run()
     {
-        string input1 = Console.ReadLine();
-        string input2 = Console.ReadLine();
-        int tal1 = int.Parse(input1);
-        int tal2 = int.Parse(input2);
-        int sum = tal1 + tal2;
+        var input1 = Console.ReadLine();
+        var input2 = Console.ReadLine();
+        var tal1 = int.Parse(input1);
+        var tal2 = int.Parse(input2);
+        var sum = tal1 + tal2;
         Console.WriteLine($"Summen er {sum}");
     }
 }

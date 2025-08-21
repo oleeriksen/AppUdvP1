@@ -1,6 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using Modul1;
+using Modul2;
 
-Opgave6.Run();
-//Greeting.Run();
+Algoritmer.Run();

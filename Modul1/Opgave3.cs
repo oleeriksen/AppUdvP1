@@ -4,12 +4,10 @@ public class Opgave3
 {
     public static void Run()
     {
-        string input = Console.ReadLine();
-        int tal = int.Parse(input);
-        for (int t = 2; t <= tal; t++)
-        {
+        var input = Console.ReadLine();
+        var tal = int.Parse(input);
+        for (var t = 2; t <= tal; t++)
             if (int.IsEvenInteger(t))
                 Console.WriteLine(t);
-        }
     }
 }

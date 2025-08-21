@@ -7,40 +7,35 @@ public class Opgave6
         RunC();
     }
 
-    static void RunA()
+    private static void RunA()
     {
-        for (int i = 0; i < 10; i++) {
-            string output = "";
-            for (int j = 0; j < 10-i; j++) {
-                output = output + "*";
-            }
+        for (var i = 0; i < 10; i++)
+        {
+            var output = "";
+            for (var j = 0; j < 10 - i; j++) output = output + "*";
             Console.WriteLine(output);
         }
     }
-    
-    static void RunB()
+
+    private static void RunB()
     {
-        for (int i = 0; i < 10; i++) {
-            string output = "";
-            for (int j = 0; j < i+1; j++) {
-                output = output + "*";
-            }
+        for (var i = 0; i < 10; i++)
+        {
+            var output = "";
+            for (var j = 0; j < i + 1; j++) output = output + "*";
             Console.WriteLine(output);
         }
     }
-    
-    static void RunC()
+
+    private static void RunC()
     {
-        for (int i = 0; i < 10; i++) {
-            string output = "";
+        for (var i = 0; i < 10; i++)
+        {
+            var output = "";
             // 9-i blanke
-            for (int j = 0; j < 9-i; j++) {
-                output += " ";
-            }
+            for (var j = 0; j < 9 - i; j++) output += " ";
             // i+1 stjerner
-            for (int j = 0; j < i+1; j++) {
-                output += "*";
-            }
+            for (var j = 0; j < i + 1; j++) output += "*";
             Console.WriteLine(output);
         }
     }
