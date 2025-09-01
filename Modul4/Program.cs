@@ -1,0 +1,6 @@
+﻿// See https://aka.ms/new-console-template for more information
+
+using Modul4;
+
+Console.WriteLine("Hello - modul 4");
+Opgave2.Run();

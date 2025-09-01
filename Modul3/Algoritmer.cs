@@ -38,6 +38,32 @@ public class Algoritmer
         }
         return sum;
     }
+    
+    static int SumAfLigeTal2(int[] a)
+    {
+        int sum = 0;
+        
+        for (int i = 0; i < a.Length; i++)
+        {
+            if (a[i] % 2 == 0) // if a[i] is even
+                sum = sum + a[i];
+        }
+        return sum;
+    }
+    
+    static int SumAfLigeTal3(int[] a)
+    {
+        int sum = 0;
+        
+        foreach (int element in a)
+        {
+            if (element % 2 == 0) // if a[i] is even
+                sum = sum + element;
+        }
+        return sum;
+    }
+    
+    
 
     static int AntalRødder(int a, int b, int c)
     {
