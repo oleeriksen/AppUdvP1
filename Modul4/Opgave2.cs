@@ -15,6 +15,9 @@ public class Opgave2
         }
     }
 
+    /// <summary>
+    /// Reads a number of grades from the Console. 
+    /// </summary>
     static int[] ReadGrades()
     {
         int[] result;
@@ -30,7 +33,9 @@ public class Opgave2
         return result;
     }
 
-    //Returnerer gennemsnittet af tallene i a
+    /// <summary>
+    /// Returnerer gennemsnittet af tallene i a
+    /// </summary>
     static double Average(int[] a)
     {
         double res = 0;
@@ -39,6 +44,9 @@ public class Opgave2
         return res / a.Length;
     }
 
+    /// <summary>
+    /// Return how many values in a that are equal to keyGrade
+    /// </summary>
     static int CountGrades(int[] a, int keyGrade)
     {
         int res = 0;

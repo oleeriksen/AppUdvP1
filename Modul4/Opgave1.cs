@@ -30,21 +30,29 @@ public class Opgave1
     static double Average(int[] a)
     {
         double res = 0;
-        foreach (int v in a)
-            res += v;
+        int idx = 0;
+        while (idx < a.Length) {
+            res += a[idx];
+            idx++;
+        }
+
         return res / a.Length;
     }
 
-    //Returnerer variansen af tallene i a
+    /// <summary>
+    /// Compute the varians of a 
+    /// </summary>
     static double Varians(int[] a)
     {
         double res = 0;
         double avg = Average(a);
         foreach (int v in a)
-            res += (v - avg) * (v - avg);
+            res += Math.Pow(v - avg, 2);
         return res / a.Length;
     }
 
     //Returnerer standardafvigelsen af tallene i a
-    static double Deviation(int[] a) => Math.Sqrt(Varians(a));
+    static double Deviation(int[] a) {
+        return Math.Sqrt(Varians(a));
+    }
 }
