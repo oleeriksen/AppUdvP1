@@ -2,23 +2,26 @@ namespace Modul6;
 
 public class Dice
 {
-    private int eyes;
-
+    // state
     private int size;
 
-    private Random r;
+    private int eyes;
 
-    public Dice(int size = 6)
+    private Random mGenerator;
+
+    public Dice(int size)
     {
         this.size = size;
-        r = new();
+        mGenerator = new Random();
+        Roll();
     }
 
-    public void Roll() {
-        eyes = r.Next(size)+1;
+    public int GetEyes() => eyes;
+
+    public void Roll()
+    {
+        eyes = mGenerator.Next(1, size+1);
     }
 
-    public int GetEyes() {
-        return eyes;
-    }
+
 }

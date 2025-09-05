@@ -7,7 +7,7 @@ public class Opgave2
         List<int> a = ReadGrades();
         Console.WriteLine($"Gennemsnit: {Average(a)}");
 
-        int[] grades = { -3, -0, 2, 4, 7, 10, 12 };
+        List<int> grades = new() { -3, -0, 2, 4, 7, 10, 12 };
         
         foreach (int keyGrade in grades) {
             int count = CountGrades(a, keyGrade);

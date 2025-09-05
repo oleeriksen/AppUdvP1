@@ -3,5 +3,4 @@
 using Modul6;
 
 Console.WriteLine("Hello, modul6");
-var app = new PersonApp();
-app.Run();
+DiceApp.Run();
