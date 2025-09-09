@@ -4,3 +4,4 @@ using Modul6;
 
 Console.WriteLine("Hello, modul6");
 DiceApp.Run();
+new PersonApp().Run();
