@@ -41,7 +41,7 @@ public class AnsatApp
     {
         foreach (Ansat a in ansatte)
         {
-            Console.WriteLine($"Navn: {a.Navn}, Email: {a.Email}");
+            Console.WriteLine($"Navn: {a.Navn}, Email: {a.Email}, Bruttoløn: {a.BruttoLøn()}");
         }
     }
 }

@@ -9,4 +9,6 @@ public class Ansat
     public float Trækprocent { get; set; }
     public bool Frokost { get; set; } = true;
     public bool Gavekasse { get; set; }
+
+    public virtual double BruttoLøn() => -1;
 }

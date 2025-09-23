@@ -2,10 +2,12 @@ namespace Modul8;
 
 public class DiceApp
 {
-    public void Run()
+    public static void Run()
     {
+        
         DiceWithHistory d = new DiceWithHistory(6);
 
+        
         for (int i = 0; i < 20; i++)
         {
             d.Roll();
