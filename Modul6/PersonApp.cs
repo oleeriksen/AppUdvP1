@@ -30,6 +30,8 @@ namespace Modul6
                 Weight = 81
             };
 
+            egon.Height = -12;
+
             Console.WriteLine($"{egon.Name}, {egon.Address}, Født: {egon.Birthday}, Højde: {egon.Height}");
 
 

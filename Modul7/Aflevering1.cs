@@ -13,7 +13,11 @@ public class Aflevering1
 // Punkt 2
         FindShortestAndLongest(words);
 // Punkt 3
-        PrintWordsWithMinLength(words, 4);
+        Console.WriteLine($"ord med længde mindst 4:");
+
+        var longWords = GetWordsWithMinLength(words, 4);
+        foreach (var word in longWords)
+            Console.WriteLine(word);
 // Punkt 4
         PrintWordsWithoutVowels(words);
     }
@@ -63,14 +67,15 @@ public class Aflevering1
     }
 
 //Udskriv ord med min længde - Punkt 3
-    private void PrintWordsWithMinLength(List<string> words, int minLength)
+    private List<string> GetWordsWithMinLength(List<string> words, int minLength)
     {
-        Console.WriteLine($"ord med længde mindst {minLength}:");
+        List<string> result = new();
         foreach (var word in words) //gennemløber ord i listen
         {
             if (word.Length >= minLength)
-                Console.WriteLine($"{word}"); //udskriver ordet hvis betingelsen passer
+                result.Add(word);
         }
+        return result;
     }
 
 //udskriv ord uden Danske vokaler - Punkt 4
@@ -87,7 +92,8 @@ public class Aflevering1
 // Hjælpefunktion: tjekker om ordet har en vokal (a, e, i, o, u, y, æ, ø, å)
     private bool ContainsDanishVowel(string word)
     {
-        string vowels = "aeiouyæøåAEIOUYÆØÅ";
+        string vowels = "aeiouyæøå";
+        word = word.ToLower();
         foreach (char c in word) //gennemgå hvert tegn i ordet
         {
             if (vowels.Contains(c)) //hvis tegnet findes i vores streng med vokaler
