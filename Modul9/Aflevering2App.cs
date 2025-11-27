@@ -7,7 +7,8 @@ public class Aflevering2App
         Aflevering2 a = new();
 
         foreach (var item in a.Items)
-            Console.WriteLine($"Name: {item.Name}, Price: {item.Price}, Stock: {item.Stock}, Color: {item.Color}");
+            Console.WriteLine(item);
+            //Console.WriteLine($"Name: {item.Name}, Price: {item.Price}, Stock: {item.Stock}, Color: {item.Color}");
     }
     
     public static void Run2()

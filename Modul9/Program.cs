@@ -4,4 +4,4 @@ using Modul9;
 
 Console.WriteLine("Hello, World!");
 
-Aflevering2App.Run3();
+new UniqueIds().Run();
