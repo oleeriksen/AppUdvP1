@@ -3,4 +3,5 @@
 using ReadExcel;
 
 Console.WriteLine("Hello, Read Excel!");
-new App().Run();
+new ExcelReader().Run();
+//ExcelFileHelper.SaveAsCsv("data.xlsx", "data.csv");
