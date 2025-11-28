@@ -1,4 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Read this: https://code-maze.com/dotnet-secure-passwords-bcrypt/
+// Install BCrypt.Net.Next nuget
 
 using Crypt;
 
