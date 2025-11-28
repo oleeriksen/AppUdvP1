@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul9", "Modul9\Modul9.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadExcel", "ReadExcel\ReadExcel.csproj", "{D178CB08-A42C-42DC-8687-F20EB08343B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypt", "Crypt\Crypt.csproj", "{A0B58941-0581-43A6-A89F-B050E1608131}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,5 +68,9 @@ Global
 		{D178CB08-A42C-42DC-8687-F20EB08343B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D178CB08-A42C-42DC-8687-F20EB08343B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D178CB08-A42C-42DC-8687-F20EB08343B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B58941-0581-43A6-A89F-B050E1608131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B58941-0581-43A6-A89F-B050E1608131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B58941-0581-43A6-A89F-B050E1608131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B58941-0581-43A6-A89F-B050E1608131}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
